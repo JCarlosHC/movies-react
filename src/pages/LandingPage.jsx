@@ -7,7 +7,7 @@ export function LandingPage() {
     const search = query.get("search");
     return (
         <div>
-            <Search />
+            <Search search={search} />
             <MoviesGrid key={search} search={search}/>
         </div>
     );
